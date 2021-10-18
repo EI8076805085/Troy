@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.IntroSliderActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="@dimen/fourtydp"
+            android:layout_marginRight="@dimen/twentydp"
+            android:padding="@dimen/fourtydp"
+            android:src="@drawable/intro_img_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentydp"
+            android:fontFamily="@font/metropolis_extrabold"
+            android:text="@string/ScanQRCode"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/twentyfive"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentyfive"
+            android:layout_marginTop="@dimen/twentydp"
+            android:layout_marginRight="@dimen/twentyfive"
+            android:layout_marginBottom="@dimen/ten"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="@string/introlongtext"
+            android:textAlignment="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/fourteensp"/>
+
+        <RelativeLayout
+            android:id="@+id/txt_nextLayout"
+            android:layout_width="@dimen/threehundred"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:background="@drawable/btn_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/metropolis_regular"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteensp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentyfive"
+            android:layout_marginRight="@dimen/twentyfive"
+            android:layout_marginBottom="@dimen/thirtydp"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="@string/skip"
+            android:textAlignment="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sixteensp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="@dimen/fourtydp"
+            android:src="@drawable/intro_img_2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:fontFamily="@font/metropolis_extrabold"
+            android:text="@string/ShareandEarn"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/twentyfive"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentyfive"
+            android:layout_marginTop="@dimen/twentydp"
+            android:layout_marginRight="@dimen/twentyfive"
+            android:layout_marginBottom="@dimen/ten"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="@string/shareapp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/fourteensp"/>
+
+        <RelativeLayout
+            android:id="@+id/txt_continueLayout"
+            android:layout_width="@dimen/threehundred"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:background="@drawable/btn_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/metropolis_regular"
+                android:text="@string/coninue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteensp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
